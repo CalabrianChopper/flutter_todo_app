@@ -13,15 +13,49 @@ class MyApp extends StatelessWidget{
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Color.fromARGB(255, 30, 75, 5),
-        body: Center(
-          child: Container(
-            height: 300,
-            width: 300,
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 50),
-            decoration: BoxDecoration(
-              color: Color.fromARGB(255, 17, 182, 58),
-              borderRadius: BorderRadius.circular(20),
+        appBar: AppBar(
+          title: Text("Questa è una app bar"),
+          backgroundColor: Colors.lightGreen,
+          elevation: 0,
+          leading: Icon(Icons.menu),
+          actions:[
+            IconButton(
+              onPressed: () {}, 
+              icon: Icon(Icons.logout),
+              )
+            ],
+        ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+
+            Container(
+              height: 200,
+              width: 200,
+              color: Colors.lightGreen,
             ),
+
+            Container(
+              height: 200,
+              width: 200,
+              color: Colors.lightGreen[400],
+            ),
+
+            Container(
+              height: 200,
+              width: 200,
+              color: Colors.lightGreen[200],
+            ),
+
+          ],
+          // child: Container(
+          //   height: 300,
+          //   width: 300,
+          //   padding: EdgeInsets.symmetric(horizontal: 20, vertical: 50),
+          //   decoration: BoxDecoration(
+          //     color: Color.fromARGB(255, 17, 182, 58),
+          //     borderRadius: BorderRadius.circular(20),
+          //   ),
             // child: Text(
             //   "Ciao sono Francesco",
             //   style: TextStyle(
@@ -30,12 +64,12 @@ class MyApp extends StatelessWidget{
             //     fontWeight: FontWeight.bold,
             //   ),
             // ),
-            child: Icon(
-              Icons.favorite,
-              color: Colors.amber,
-              size: 64,
-            ),
-          ),
+            // child: Icon(
+            //   Icons.favorite,
+            //   color: Colors.amber,
+            //   size: 64,
+            // ),
+          // ),
         ),
       ),
     );
