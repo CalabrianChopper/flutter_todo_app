@@ -25,26 +25,51 @@ class MyApp extends StatelessWidget{
               )
             ],
         ),
+        //DIMENSIONI FIXED DEI CONTAINER
+        // body: Column(
+        //   mainAxisAlignment: MainAxisAlignment.center,
+        //   children: [
+
+        //     Container(
+        //       height: 200,
+        //       width: 200,
+        //       color: Colors.lightGreen,
+        //     ),
+
+        //     Container(
+        //       height: 200,
+        //       width: 200,
+        //       color: Colors.lightGreen[400],
+        //     ),
+
+        //     Container(
+        //       height: 200,
+        //       width: 200,
+        //       color: Colors.lightGreen[200],
+        //     ),
+
+        //   ],
+        //DIMENSIONI ADATTABILI DEI CONTAINER
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
 
-            Container(
-              height: 200,
-              width: 200,
+            Expanded(
+              child: Container(
               color: Colors.lightGreen,
+              ),
             ),
 
-            Container(
-              height: 200,
-              width: 200,
+            Expanded(
+              child: Container(
               color: Colors.lightGreen[400],
+              ),
             ),
 
-            Container(
-              height: 200,
-              width: 200,
+            Expanded(
+              child: Container(
               color: Colors.lightGreen[200],
+              ),
             ),
 
           ],
